@@ -1,5 +1,145 @@
-/*COLORS:
-Header background - #FFDBAA
-button - #805215
-Header Text - #553100
-Main background - #D4A76A*/
+html {
+    height: 100%;
+    width: 100%;
+    /* COLORS:
+    Header background - #FFDBAA
+    button - #805215
+    Header Text - #553100
+    Main background - #D4A76A */
+  }
+  
+  /* General Style*/
+  body {
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #D4A76A
+  }
+  
+  /* Navigation Styles */
+  nav {
+    background-color: #FFDBAA;
+    color: #553100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 2px solid black;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-image {
+    width: 50px;
+    height: auto;
+    margin-right: 0.5rem;
+  }
+  
+  .nav-items button {
+    background: #805215;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-left: 1rem;
+    padding: 0.5rem 1rem;
+  }
+  
+  /* Hero section styels */
+  .hero {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 4rem; /* Gap between columns */
+    padding: 4rem; /* Padding between hero section */
+    text-align: center;
+  }
+  
+  .hero .column-left,
+  .hero .column-middle,
+  .hero .column-right {
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hero .column-left p,
+  .hero .column-middle p,
+  .hero .column-right p {
+    text-align: left;
+    padding-left: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .hero-2 {
+    margin-top: -1rem; /* Reduce space between hero and hero-2 */
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .hero-2 .column-full {
+    grid-column: 1 / -1; /* Span the full width */
+    background: white;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero .column-full p {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  
+  hi {
+    margin-top: 0;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1rem;
+    text-align: left;
+    width: 100%;
+  }
+  
+  .hero button {
+    background: #805215;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+    padding: 0.5rem 7rem;
+  }
+  
+  .hero-2 button {
+    background: #805215;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: auto;
+    padding: 0.5rem 15rem;
+  }
+  
+  button:hover {
+      background-color: #e68900;
+  }
+  
+  
